@@ -1,0 +1,19 @@
+"Convert string into array and reverse it and then get it back to string again"
+
+print(''.join(list('My name is Taro')[::-1]))
+
+
+"the same as described above"
+data = 'My name is Taro'
+
+def convStToLi(string):
+    li = list(data)
+    return li
+
+def liToString(li):
+    stri = ''
+    new = stri.join(li[::-1])
+    return new
+
+li = convStToLi(data)
+liToString(li)
